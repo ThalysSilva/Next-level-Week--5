@@ -12,8 +12,8 @@ export function App() {
 
 
   return (
-   <main className={`${styles.contentWrapper} ${!!user ? styles.contentSigned: ''}`}>
-     <MessageList/>
+   <main className={`${styles.contentWrapper} ${!!user ? styles.contentSigned : ''}`}>
+     <MessageList />
 
      { !!user? <SendMessageForm/> : <LoginBox/> }
    </main>
